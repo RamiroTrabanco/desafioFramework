@@ -36,18 +36,27 @@
         </div>
     </nav>
 
-    <section id="formulario">                                                                  
-            <h2 class="h2Titulo display-4 text-center fw-bolder text-decoration-underline">Tenés dudas sobre tu compra? Contactanos</h2>
-            <form class="contactoFlex">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre">
-                <label for="email">E-mail:</label>
-                <input type="email" name="correo">
-                <label for="pedido" name="numeropedido">N° de Pedido:</label>
-                <input type="number" name="numeropedido">
-                <label for="asunto">Asunto:</label>
-                <textarea id="asunto" rows="10" cols="50"></textarea>
-                <input type="submit"></input>
+    <section id="formulario">                                                                    
+        <h2 class="h2Titulo display-4 text-center fw-bolder text-decoration-underline">Tenés dudas sobre tu compra? Contactanos</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">No compartiremos tu mail con nadie</div>
+                </div>
+                <div class="mb-3">
+                    <label for="Pedido" class="form-label">N° de Pedido</label>
+                    <input type="number" class="form-control" id="NdePedido">
+                </div>
+                <div class="mb-3">
+                    <label for="Asunto" class="form-label">Asunto</label>
+                    <textarea class="form-control" id="Asunto" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
     </section>
 
