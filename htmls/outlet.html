@@ -5,41 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-Hagen Hardware</title>
-    <link rel="stylesheet" href="..css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../estilos.css">
 </head>
 <body class="gridOutlet">
 
     <header>
-        <h1>T-HAGEN HARDWARE</h1>
+        <h1 class="display-1 text-end fw-bolder text-decoration-underline">T-HAGEN HARDWARE</h1>
     </header>
 
-    <nav class="navFlex">                                                                   
-       <a href="../index.html"class="transicionNav">Inicio</a>
-       <a href="productos.html"class="transicionNav">Productos</a>
-       <a href="outlet.html"class="transicionNav">Outlet</a>
-       <a href="visitanos.html"class="transicionNav">Visitanos</a>
-       <a href="contacto.html"class="transicionNav">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="../index.html">Inicio</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="navbar-brand mb-0 h1 nav-link active" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand mb-0 h1 nav-link active" href="outlet.html">Outlet</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand mb-0 h1 nav-link active" href="visitanos.html">Visitanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand mb-0 h1 nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
 
-    <h2 class="h2Titulo">Outlet</h2>
+    <h2 class="h2Titulo display-4 text-center fw-bolder text-decoration-underline">Outlet</h2>
 
-    <section class="outletFlex">
+    <section class="container-fluid text-center">
         <p>Garantizamos su funcionamiento, productos exhibidos en nuestros locales de Galerías Pacífico</p>
         <p>Todos los productos cuentan con dos años de garantía</p>
-        <img src="../imagenes/lg-ug-32gp850.jpg" alt="Monitor LG 32GP850">
-        <h3>LG 32GP850-B - LG UltraGear: $120.000,00</h3>
-        <img src="../imagenes/lg-ug-fullhd-240hz.jpg" alt="Monitor LG UltraGear FullHD">
-        <h3>UltraGear ™ FULLHD HD 240Hz IPS: $200.000,00</h3>   
+        <div class="row">
+            <div class="col">
+                <img src="../imagenes/lg-ug-32gp850.jpg" alt="Monitor LG 32GP850">
+                <h3 class="h5">LG 32GP850-B - LG UltraGear: $120.000,00</h3>
+            </div>
+            <div class="col">
+                <img src="../imagenes/lg-ug-fullhd-240hz.jpg" alt="Monitor LG UltraGear FullHD">
+                <h3 class="h5">UltraGear ™ FULLHD HD 240Hz IPS: $200.000,00</h3>
+            </div>   
+        </div>
     </section>
 
-
-    <footer class="flexFooter">
-        <p>Cualquier problema con tu pedido podés comunicarte via mail o teléfono</p>
+    <footer>
+        <article class="text-end">
+        <p>Cualquier consulta, duda, pedido podés comunicarte via mail o teléfono</p>
         <p>4567-1478</p>
         <a href="mailto:thagenhardware@gmail.com"> thagenhardware@gmail.com</a>
+        </article>
     </footer>
     
-    <script src="..js/bootstrap.js"></script>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>
