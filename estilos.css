@@ -1,0 +1,679 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+                                                                                                                                    /*DESKTOP*/
+
+
+h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 85px;
+    text-align: right;
+    color: #414141;
+    border: solid black 20px;
+}
+
+.navFlex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+nav a{
+    font-size: 30px;
+    color:#CA3E47;
+    text-decoration: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-left: solid #CA3E47 3px;
+}
+
+nav {
+    background-image: linear-gradient(to bottom, black 90%, #525252)
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+section {
+    padding-top: 25px;
+    padding-left: 25px;
+    background-image: linear-gradient(to bottom, #525252 85%, black);
+}
+
+.indexSpanFlex {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    font-size: 16px;
+    padding-left: 70px;
+    background-image: linear-gradient(to bottom, #525252 85%, black);
+}
+
+.transicionNav {
+    transition: all 1s;
+}
+
+.transicionNav:hover {
+    transform:scale(1.12);
+    background-color: white;
+    border-left: solid #CA3E47 7px;
+    padding-right: 5px;
+}
+
+footer {
+    grid-area: pie;
+    font-size: 10px;
+    color:white;
+    background-color: black;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.flexFooter {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.indexFlex {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 100px;
+}
+
+section h2 {
+    font-size: 30px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+section iframe {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.gridFlex {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "nav nav"
+    "bienvenida ingresos"
+    "pie pie"
+    ;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 13% 5% 70% auto;
+}
+
+header {
+    grid-area: cabeza;
+}
+
+nav {
+    grid-area: nav;
+}
+
+span {
+    grid-area: bienvenida;
+}
+
+section {
+    grid-area: ingresos;
+}
+
+#productos {
+    grid-area: productos;
+    background-image: linear-gradient(to bottom, #525252 85%, black);
+    padding-top: 25px;
+}
+
+.gridProductos {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "nav nav"
+    "titulo titulo"
+    "ingresos productos"
+    "pie pie"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 13% 5% auto auto 12%;
+}
+
+.h2Titulo {
+    grid-area: titulo;
+    background-color: #525252;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.productosFlex {
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+section img, article img {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+}
+
+section h3, article h3 {
+    color:white;
+    padding: 25px;
+}
+
+.gridOutlet {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "nav nav"
+    "titulo titulo"
+    "ingresos ingresos"
+    "pie pie"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 13% 5% auto auto 12%;
+}
+
+.outletFlex {
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+section p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.gridVisitanos {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "nav nav"
+    "titulo titulo"
+    "ingresos ingresos"
+    "pie pie"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 13% 5% 10% auto 12%;
+}
+
+.visitanosFlex {
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.gridContacto {    
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "nav nav"
+    "ingresos ingresos"
+    "pie pie"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 13% 5% auto 12%;
+}
+
+.contactoFlex {
+    display:flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+section form label, section form input {
+    margin: 5px;
+}
+
+#formulario {
+    padding: 40px;
+}
+
+
+                                                                                                                                            /*MOBILE*/
+
+
+@media (max-width:480px) {
+
+    .gridFlex {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "bienvenida"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 22% 26% auto 10%;
+    }
+
+    header {
+        background-color: white;
+    }
+
+    header h1 {
+        background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-size: 35px;
+        text-align: center;
+        color: #414141;
+        border: solid black 20px;
+        border-bottom: solid;
+    }
+
+    .navFlex {
+        display:flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    
+    nav a{
+        font-size: 15px;
+        color:#CA3E47;
+        text-decoration: none;
+        border-left: solid #CA3E47 3px;
+        margin-left: 20px;
+    }
+
+    .indexSpanFlex {
+        display: flex;
+        flex-flow: nowrap column;
+        font-size: 14px;
+        padding-left: 30px;
+        background-color: #525252;
+    }
+    .indexFlex {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    section h2 {
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    
+
+    .gridProductos {
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "nav"
+    "titulo"
+    "ingresos"
+    "productos"
+    "pie"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 22% auto auto auto 10%;
+    background-color: black;
+    }
+
+    header h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 35px;
+    text-align: center;
+    color: #414141;
+    border: solid black 20px;
+    }
+
+    .navFlex {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-content: center;
+    }
+
+    nav a{
+    font-size: 15px;
+    color:#CA3E47;
+    text-decoration: none;
+    border-left: solid #CA3E47 3px;
+    margin-left: 20px;
+    }
+
+    .gridOutlet {
+    
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "nav"
+    "titulo"
+    "ingresos"
+    "pie"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 22% auto auto 10%;
+    background-color: black;
+    }   
+
+    header h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 35px;
+    text-align: center;
+    color: #414141;
+    border: solid black 20px;
+    }
+
+    .navFlex {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-content: center;
+    }
+
+    nav a{
+    font-size: 15px;
+    color:#CA3E47;
+    text-decoration: none;
+    border-left: solid #CA3E47 3px;
+    margin-left: 20px;
+    }
+
+    .gridVisitanos {
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "nav"
+    "titulo"
+    "ingresos"
+    "pie"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 22% auto auto 10%;
+    background-color: black;
+    }
+
+    header h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 35px;
+    text-align: center;
+    color: #414141;
+    border: solid black 20px;
+    }
+
+    .navFlex {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-content: center;
+    }
+
+    nav a{
+    font-size: 15px;
+    color:#CA3E47;
+    text-decoration: none;
+    border-left: solid #CA3E47 3px;
+    margin-left: 20px;
+    }
+
+    .gridContacto {
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "nav"
+    "ingresos"
+    "pie"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 22% auto 10%;
+    background-color: black;
+    }
+
+    header h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 35px;
+    text-align: center;
+    color: #414141;
+    border: solid black 20px;
+    }
+
+    .navFlex {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-content: center;
+    }
+
+    nav a{
+    font-size: 15px;
+    color:#CA3E47;
+    text-decoration: none;
+    border-left: solid #CA3E47 3px;
+    margin-left: 20px;
+    }
+}
+
+                                                                                                                                            /* TABLET */
+
+@media (max-width:1023px) and (min-width:481px){
+    .gridFlex {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "bienvenida"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto auto 10%;
+    }
+
+    header h1 {
+    background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 40px;
+    text-align: center;
+    color: #414141;
+    border: solid black 20px;}
+
+    nav a{
+        font-size: 20px;
+        }
+
+    .navFlex {
+            display:flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+    }
+
+    .indexSpanFlex {
+        display: flex;
+        flex-flow: nowrap column;
+        font-size: 20px;
+        padding: 25px;
+        background-color: #525252;
+    }
+    .indexFlex {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    section h2 {
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    footer p, footer a {
+        font-size: 12px;
+    }
+    
+    .gridProductos
+        {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "titulo"
+        "ingresos"
+        "productos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto auto auto 10%;
+        }
+    
+    header h1 {
+        background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-size: 40px;
+        text-align: center;
+        color: #414141;
+        border: solid black 20px;}
+    
+        
+
+    nav a{
+        font-size: 20px;
+        }
+    
+    .navFlex {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        }
+
+    .gridOutlet {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "titulo"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto auto 10%;
+    }
+    
+    header h1 {
+        background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-size: 40px;
+        text-align: center;
+        color: #414141;
+        border: solid black 20px;}
+    
+        
+
+    nav a{
+        font-size: 20px;
+        }
+    
+    .navFlex {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        }
+
+    .gridVisitanos {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "titulo"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% 10% auto 10%;
+    }
+    
+    header h1 {
+        background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-size: 40px;
+        text-align: center;
+        color: #414141;
+        border: solid black 20px;}
+    
+        
+
+    nav a{
+        font-size: 20px;
+        }
+    
+    .navFlex {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+    }
+
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "nav"
+        "ingresos"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 4% auto 10%;
+    }
+    
+    header h1 {
+        background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        font-size: 40px;
+        text-align: center;
+        color: #414141;
+        border: solid black 20px;}
+    
+        
+
+    nav a{
+        font-size: 20px;
+        }
+    
+    .navFlex {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        align-content: flex-start;        
+    }
+    }
