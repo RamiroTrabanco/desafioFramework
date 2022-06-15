@@ -14,10 +14,11 @@ h1 {
     background-image:url("https://pijamasurf.com/wp-content/uploads/10.208.149.45/uploads/2012/09/pizza_amore.jpg");
     background-repeat: no-repeat;
     background-position: left center;
+    font-size: 85px;
+    text-align: right;
+    color: #414141;
     border: solid black 20px;
-    margin: 0;
 }
-
 
 .navFlex {
     display:flex;
@@ -27,6 +28,7 @@ h1 {
 }
 
 nav a{
+    font-size: 30px;
     color:#CA3E47;
     text-decoration: none;
     padding-left: 10px;
@@ -37,7 +39,6 @@ nav a{
 nav {
     background-image: linear-gradient(to bottom, black 90%, #525252)
 }
-
 
 body {
     width: 100%;
@@ -52,11 +53,16 @@ section {
 }
 
 .indexSpanFlex {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 70px;
     background-image: linear-gradient(to bottom, #525252 85%, black);
-    padding: 40px;
 }
 
-/*.transicionNav {
+.transicionNav {
     transition: all 1s;
 }
 
@@ -65,7 +71,15 @@ section {
     background-color: white;
     border-left: solid #CA3E47 7px;
     padding-right: 5px;
-}*/
+}
+
+.transicionProductos {
+    transition: all 1s;
+}
+
+.transicionProductos:hover {
+    transform:scale(1.15);
+}
 
 footer {
     grid-area: pie;
@@ -76,12 +90,12 @@ footer {
     padding-top: 20px;
 }
 
-/* .flexFooter {
+.flexFooter {
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-} */
+}
 
 .indexFlex {
     display:flex;
@@ -136,7 +150,7 @@ section {
     padding-top: 25px;
 }
 
-/* .gridProductos {
+.gridProductos {
     display: grid;
     grid-template-areas:
     "cabeza cabeza"
@@ -147,11 +161,16 @@ section {
     ;
     grid-template-columns: 50% 50%;
     grid-template-rows: 13% 5% auto auto 12%;
-} */
+}
 
 .h2Titulo {
     grid-area: titulo;
     background-color: #525252;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
     margin: 0;
 }
 
@@ -237,10 +256,16 @@ section form label, section form input {
     margin: 5px;
 }
 
-
 #formulario {
     padding: 40px;
 }
+
+section form {
+    margin-left: 25%;
+    width: 50%;
+}
+
+
 
 
                                                                                                                                             /*MOBILE*/
@@ -297,6 +322,7 @@ section form label, section form input {
         font-size: 14px;
         padding-left: 30px;
         background-color: #525252;
+        background-image: none;
     }
     .indexFlex {
         display:flex;
@@ -334,6 +360,11 @@ section form label, section form input {
     text-align: center;
     color: #414141;
     border: solid black 20px;
+    }
+
+    .productosFlex {
+        background-color:#525252;
+        background-image: none;
     }
 
     .navFlex {
@@ -469,12 +500,6 @@ section form label, section form input {
     }
 }
 
-form div{
-    width:50%;
-    align-items: center;
-    justify-content: center;
-}
-
                                                                                                                                             /* TABLET */
 
 @media (max-width:1023px) and (min-width:481px){
@@ -517,7 +542,9 @@ form div{
         font-size: 20px;
         padding: 25px;
         background-color: #525252;
+        background-image: none;
     }
+
     .indexFlex {
         display:flex;
         flex-direction: column;
@@ -532,6 +559,11 @@ form div{
 
     footer p, footer a {
         font-size: 12px;
+    }
+
+    .productosFlex {
+        background-image: none;
+        background-color:#525252;
     }
     
     .gridProductos
